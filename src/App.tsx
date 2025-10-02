@@ -34,8 +34,8 @@ function App() {
                   <>
                     <Navigation />
                     <Routes>
-                      <Route path="/" element={<LandingPage />} />
-                      <Route path="/home" element={<HomePage />} />
+                    
+                      <Route path="/" element={<HomePage />} />
                       <Route path="/blog" element={<BlogPage />} />
                       <Route path="/blog/:slug" element={<BlogPostPage />} />
                       <Route path="/story" element={<StoryPage />} />
