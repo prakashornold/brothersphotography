@@ -19,6 +19,7 @@ function App() {
         <Router>
           <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
             <Routes>
+              <Route path="/" element={<LandingPage />} />
               <Route path="/admin" element={<AdminLoginPage />} />
               <Route
                 path="/admin/dashboard"
@@ -32,9 +33,8 @@ function App() {
                 path="/*"
                 element={
                   <>
-                    {!hideNav && <Navigation />}
+                    <Navigation />
                     <Routes>
-                     <Route path="/" element={<LandingPage />} />
                       <Route path="/home" element={<HomePage />} />
                       <Route path="/blog" element={<BlogPage />} />
                       <Route path="/blog/:slug" element={<BlogPostPage />} />
