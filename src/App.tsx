@@ -32,7 +32,7 @@ function App() {
                 path="/*"
                 element={
                   <>
-                    <Navigation />
+                    {!hideNav && <Navigation />}
                     <Routes>
                      <Route path="/" element={<LandingPage />} />
                       <Route path="/home" element={<HomePage />} />
