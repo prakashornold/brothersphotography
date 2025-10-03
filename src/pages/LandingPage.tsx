@@ -104,14 +104,7 @@ export default function LandingPage() {
           Capturing Stories Through the Lens
         </p>
 
-     
-  <a
-  href="/home"
-  className="px-6 py-3 bg-amber-400 text-black font-semibold rounded-full shadow-lg 
-             hover:bg-amber-500 transition duration-300 mt-6"
->
-  Go to Home
-</a>
+    
 
 
         <div className="flex space-x-2">
@@ -150,6 +143,14 @@ export default function LandingPage() {
         <p className="opacity-70">
           {currentIndex + 1} / {landingImages.length}
         </p>
+
+          <a
+  href="/home"
+  className="px-6 py-3 bg-amber-400 text-black font-semibold rounded-full shadow-lg 
+             hover:bg-amber-500 transition duration-300 mt-6"
+>
+  Go to Home
+</a>
       </div>
     </div>
   );
